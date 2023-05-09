@@ -279,7 +279,7 @@ export class ChatGPTBot {
       console.log(`🎯 Customized task triggered: ${myTaskContent}`);
       console.log(`🤖️ ChatGPT says: ${myReply}`);
       return;
-    
+    }
      async onCustimzedTask(message: Message) {
     const myKeyword = "怀山";
     if (message.text().includes(myKeyword)) {
