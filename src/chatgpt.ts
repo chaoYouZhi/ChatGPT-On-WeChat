@@ -271,11 +271,11 @@ export class ChatGPTBot {
     
    // handle message for customized task handlers
    async onCustimzedTask(message: Message) {
-    // e.g. if a message starts with "麦扣", the bot sends "🤖️：call我做咩啊大佬!"
-    const myKeyword = "麦扣";
+    // e.g. if a message starts with "怀山", the bot sends "bingo：bento.me/mos 请进"
+    const myKeyword = "怀山";
     if (message.text().includes(myKeyword)) {
       const myTaskContent = `回复所有含有"${myKeyword}"的消息`;
-      const myReply = "🤖️：call我做咩啊大佬";
+      const myReply = "bingo：bento.me/mos 请进";
       await message.say(myReply);
       console.log(`🎯 Customized task triggered: ${myTaskContent}`);
       console.log(`🤖️ ChatGPT says: ${myReply}`);
