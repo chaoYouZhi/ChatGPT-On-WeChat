@@ -281,7 +281,7 @@ export class ChatGPTBot {
       return;
     }
     
-  async onCustimzedTask(message: Message) {
+  async onCustimzedTask2(message: Message) {
     const myKeyword = "怀山";
     if (message.text().includes(myKeyword)) {
       const myTaskContent = `回复所有含有"${myKeyword}"的消息`;
