@@ -274,7 +274,7 @@ export class ChatGPTBot {
     const myKeyword = "怀山";
     if (message.text().includes(myKeyword)) {
       const myTaskContent = `回复所有含有"${myKeyword}"的消息`;
-      const myReply = "🎊https://bento.me/mos";
+      const myReply = "解锁（https://bento.me/mos）🔮";
       await message.say(myReply);
       console.log(`🎯 Customized task triggered: ${myTaskContent}`);
       console.log(`🤖️ ChatGPT says: ${myReply}`);
