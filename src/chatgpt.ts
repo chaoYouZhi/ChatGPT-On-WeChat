@@ -270,7 +270,7 @@ export class ChatGPTBot {
   }
     
    // handle message for customized task handlers
-async onCustomizedTask(message: Message) {
+async onCustimzedTask(message: Message) {
   const myKeyword1 = "怀山";
   const myKeyword2 = "美食"; // 新增的关键字
   if (message.text().includes(myKeyword1)) {
