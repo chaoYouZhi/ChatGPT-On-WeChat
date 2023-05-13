@@ -287,8 +287,8 @@ async onCustimzedTask(message: Message) {
     console.log(`🎯 Customized task triggered: ${myTaskContent}`);
     console.log(`🤖️ ChatGPT says: ${myReply}`);
     return;
-  }
-}
-
+        }
+      }
+    }
   }
 }
