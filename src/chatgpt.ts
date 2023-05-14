@@ -272,17 +272,17 @@ export class ChatGPTBot {
    // handle message for customized task handlers
 async onCustimzedTask(message: Message) {
   const myKeyword1 = "怀山";
-  const myKeyword2 = "美食"; // 新增的关键字
+  const myKeyword2 = "帮助"; // 新增的关键字
   if (message.text().includes(myKeyword1)) {
     const myTaskContent = `回复所有含有"${myKeyword1}"的消息`;
-    const myReply = "bingo：bento.me/mos 请进😝，里面是我的一些数字信息";
+    const myReply = "bingo：www.bento.me/mos 请进😝，里面是我的一些数字信息";
     await message.say(myReply);
     console.log(`🎯 Customized task triggered: ${myTaskContent}`);
     console.log(`🤖️ ChatGPT says: ${myReply}`);
     return;
   } else if (message.text().includes(myKeyword2)) { // 新增的条件语句
     const myTaskContent = `回复所有含有"${myKeyword2}"的消息`;
-    const myReply = "这是我推荐的美食地图：www.foodmaps.com";
+    const myReply = "bingo：www.bento.me/mos 请进，里面的飞书文档密码是【LJIl】";
     await message.say(myReply);
     console.log(`🎯 Customized task triggered: ${myTaskContent}`);
     console.log(`🤖️ ChatGPT says: ${myReply}`);
